@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,13 +15,13 @@ const config: Config = {
       },
       colors: {
         'primary': '#fb5533',
-        'font-dark-color': '#222',
-        'font-light-color': '#fff',
+        'dark-color': '#222',
+        'light-color': '#fff',
         'border-color': 'rgba(0, 0, 0, 0.87)',
         'hover-color': 'rgba(0, 0, 0, 0.02)',
       }
     },
   },
   plugins: [],
-};
-export default config;
+}
+

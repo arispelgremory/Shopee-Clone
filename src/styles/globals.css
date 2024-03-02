@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body {
+  font-family: 'Roboto' !important;
+}
+
+.custom-container {
+  max-width: 1200px;
+  @apply mx-auto;
+}
+
+.left-border > div {
+    position: relative;
+    padding-left: 1.5rem;
+
+}
+
+.header-left > a:not(:first-child)::after {
+    content: "";
+    height: .9375rem;
+    width: 0;
+    border-left: 1px solid hsla(0,0%,100%,.22);
+    border-right: 1px solid hsla(0,0%,100%,.22);
+    position: absolute;
+    left: -6px;
+    top: calc(50% - 7px);
+}
+
+.header-right > a,
+.header-left > a  {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 15.6px;
+    color: #fff;
+    position: relative;
+}
+
+.header-right > a > svg {
+    width: 18px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.header-right > a.notifications > svg {
+  width: 14px;
+  height: 18px;
+}
+
+.header-with-search {
+  padding: 1rem 0 .625rem;
+}
+
+.logo {
+    position: relative;
+    top: -.5rem;
+    padding-right: 2.5rem;
+}
+
+.search-form {
+    width: 100%;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.09);
+    --focus-indicator-spacing: 3px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    height: 2.5rem;
+    box-sizing: border-box;
+    padding: .1875rem;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.search-form > .search-bar-wrapper {
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+
+form.search-form .search-btn {
+  @apply bg-primary relative;
+  height: 34px;
+  padding: 0 15px; 
+  min-width: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recommendations {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    position: relative;
+    overflow: visible;
+    outline: 0;
+    white-space: nowrap;
+    display: block;
+    color: rgba(0,0,0,.54);
+    color: hsla(0,0%,100%,.9);
+    height: .875rem;
+    line-height: .875rem;
+    margin-top: .3125rem;
+    margin-bottom: .3125rem;
+}
+
+.recommendations a {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    position: relative;
+    overflow: visible;
+    outline: 0;
+    white-space: nowrap;
+    display: block;
+    color: rgba(0,0,0,.54);
+    margin-left: 13px;
+    color: hsla(0,0%,100%,.9);
+    height: .875rem;
+    line-height: .875rem;
+    margin-top: .3125rem;
+    margin-bottom: .3125rem;
+}
+
+.recommendations a:first-child {
+    margin-left: 0;
+}
+
+.cart-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-bottom: 5px;
+    margin: 0 10px;
+}
