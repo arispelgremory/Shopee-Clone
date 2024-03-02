@@ -235,3 +235,17 @@ li.footer-payment-list {
 .HKksoM:not(:last-child) {
   border-right: 1px solid rgba(0,0,0,.2);
 }
+
+._2w1zxo {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: .8125rem;
+    line-height: .875rem;
+    max-width: 150px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    overflow: hidden;
+    white-space: pre-line;
+}
