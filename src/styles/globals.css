@@ -145,3 +145,93 @@ form.search-form .search-btn {
     padding-bottom: 5px;
     margin: 0 10px;
 }
+
+.footer-header {
+    font-size: .75rem;
+    font-weight: 700;
+    color: rgba(0,0,0,.87);
+    margin-bottom: 1.25rem;
+    margin-top: 2.5rem;
+}
+
+
+.footer-link {
+    text-decoration: none;
+    color: rgba(0,0,0,.65);
+    overflow: hidden;
+}
+
+ul.footer-link-list li {
+  font-size: .75rem;
+  margin-bottom: 0.75rem;
+}
+
+.footer-link a span.footer-link-text,
+span.xTjlXx {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 14.4px;
+
+}
+
+.custom-text {
+  line-height: 1.125rem;
+  font-size: 14px;
+  color: rgba(0,0,0,.54);
+}
+
+li.o8Gbgv {
+  @apply mb-3;
+}
+
+li.footer-payment-list {
+    width: 3.75rem;
+    height: 1.875rem;
+    margin-bottom: .5rem;
+    margin-right: .5rem;
+    padding: .25rem;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: .125rem;
+}
+
+.ebQ6br {
+    height: 5rem;
+    width: 5rem;
+    margin-right: .75rem;
+    padding: .25rem;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.W4jGm6 {
+  @apply flex items-center justify-center;
+    width: 4.25rem;
+    padding: .25rem;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    border-radius: 2px;
+}
+
+.W4jGm6:not(:last-child) {
+  @apply mb-2;
+}
+
+.custom-bt{ 
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.HKksoM {
+  @apply custom-text;
+  padding: 0 5px;
+}
+
+.HKksoM:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,.2);
+}
