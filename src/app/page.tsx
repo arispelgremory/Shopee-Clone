@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <div className={"custom-container"}>
       <Section1 suggestions={suggestions} />
-      
+      <Section2 />
     </div>
   );
 }
@@ -136,3 +136,63 @@ const Section1: React.FC<{
   );
 }
 
+
+const Section2: React.FC = () => {
+
+  const item = [
+    {
+      price: "RM 1.00",
+      url: "/item-1",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+    {
+      price: "RM 1.00",
+      url: "/item-2",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+    {
+      price: "RM 1.00",
+      url: "/item-3",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+    {
+      price: "RM 1.00",
+      url: "/item-4",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+    {
+      price: "RM 1.00",
+      url: "/item-5",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+    {
+      price: "RM 1.00",
+      url: "/item-6",
+      image: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    },
+  ]
+
+  return (
+    <div className="custom-container mt-[20px]">
+      <div className="banner w-full bg-gray-400"></div>
+      <div className="p-[15px] pt-0 bg-primary">
+        <div className="h-[155px] w-full bg-primary"></div>
+
+        <div className="flex flex-col">
+          <div className="flex items-center justify-between mx-[15px] h-[60px]">
+            <div className="text-base text-white">CHECKOUT NOW</div>
+            <a href="/all" className="text-white text-xs">See More {'>'}</a>
+          </div>
+          <div className="grid grid-cols-6 overflow-hidden gap-[1px]">
+            {item.map((item, index) => (
+              <div className="bg-white p-[15px] flex flex-col justify-center items-center">
+                <div className="bg-gray-400 w-[162px] aspect-square"></div>
+                <div className="mt-[15px] mb-[5px]">{item.price}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

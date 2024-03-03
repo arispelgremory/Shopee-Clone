@@ -3,7 +3,7 @@ import React from 'react';
 const Header: React.FC = () => {
     return (
       <>
-        <header className="bg-primary fixed w-screen">
+        <header className="bg-primary fixed w-screen z-50">
           <div className="custom-container">
             <div className="w-full flex justify-between h-[2.125rem]">
               <div className="flex [&>a:not(:first-child)]:ml-2.5 [&>a]:p-[5px] text-light-color header-left">
