@@ -8,6 +8,11 @@ import { useEffect, useState } from "react";
 const suggestions = [
   {
     icon: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+    title: "Suggestion 1",
+    url: "/suggestion-1",
+  },
+  {
+    icon: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
     title: "Suggestion 2",
     url: "/suggestion-2",
   },
@@ -67,6 +72,7 @@ export default function Home() {
     <div className={"custom-container"}>
       <Section1 suggestions={suggestions} />
       <Section2 />
+      <Section3 />
     </div>
   );
 }
@@ -195,4 +201,128 @@ const Section2: React.FC = () => {
       </div>
     </div>
   );
+}
+
+const Section3: React.FC = () => {
+
+  const categories = [
+    {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 1",
+        url: "/category-1",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 2",
+        url: "/category-2",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 3",
+        url: "/category-3",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 4",
+        url: "/category-4",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 5",
+        url: "/category-5",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 6",
+        url: "/category-6",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 7",
+        url: "/category-7",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 8",
+        url: "/category-8",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 9",
+        url: "/category-9",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 10",
+        url: "/category-10",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 11",
+        url: "/category-11",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 12",
+        url: "/category-12",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 13",
+        url: "/category-13",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 14",
+        url: "/category-14",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 15",
+        url: "/category-15",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 16",
+        url: "/category-16",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 17",
+        url: "/category-17",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 18",
+        url: "/category-18",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 19",
+        url: "/category-19",
+      },
+      {
+        img: "https://www.flaticon.com/svg/vstatic/svg/174/174857.svg?token",
+        title: "Category 20",
+        url: "/category-20",
+      },
+  ]
+
+  return (
+    <div className="bg-white">
+      <div className="my-4">CATEGORIES</div>
+      <div className="grid grid-cols-10">
+        {
+          categories.map((category, index) => (
+            <div className="flex flex-col items-center justify-center">
+              <div className="bg-primary w-[80px] aspect-square"></div>
+              <div>
+                {category.title}
+              </div>
+            </div> 
+          ))
+        }
+      </div>
+    </div>
+  )
 }
