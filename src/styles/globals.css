@@ -13,6 +13,8 @@
 
 body {
   font-family: 'Roboto' !important;
+  overflow-x: hidden;
+  background: url("https://down-my.img.susercontent.com/file/my-50009109-7c4693cab112ce7a40ec5093c5234d95") center top / 100% no-repeat;
 }
 
 .custom-container {
@@ -248,4 +250,17 @@ li.footer-payment-list {
     word-wrap: break-word;
     overflow: hidden;
     white-space: pre-line;
+}
+
+.orange-border-top {
+  border-top: 4px solid #f57c00;
+}
+
+.gray-border-bottom {
+  border-bottom: 1px solid rgba(0,0,0,.09);
+}
+
+.link-button {
+  @apply flex items-center justify-center text-center h-[40px] w-[350px] text-sm text-[rgba(0,0,0,0.8)] bg-[rgba(0,0,0,0.02)] px-5;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.03);
 }
