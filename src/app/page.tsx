@@ -2,6 +2,7 @@
 
 import { Carousel } from "antd";
 import Image from "next/image";
+import { title } from "process";
 import { useEffect, useState } from "react";
 
 
@@ -73,6 +74,11 @@ export default function Home() {
       <Section1 suggestions={suggestions} />
       <Section2 />
       <Section3 />
+      <Section4 title={"SHOCKING SALE"} />
+      <Section5 />
+      <Section6 />
+      <Section4 title={"TOP PRODUCTS"} />
+      <Section7 />
     </div>
   );
 }
@@ -314,12 +320,113 @@ const Section3: React.FC = () => {
       <div className="grid grid-cols-10">
         {
           categories.map((category, index) => (
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center h-[120px]">
               <div className="bg-primary w-[80px] aspect-square"></div>
               <div>
                 {category.title}
               </div>
             </div> 
+          ))
+        }
+      </div>
+    </div>
+  )
+}
+
+const Section4: React.FC<{ title: string }> = ({ title }) => {
+  return (
+    <>
+      <div className="custom-container bg-slate-400 mt-[20px]">
+        <div className="px-[20px] py-[15px]">{ title }</div>
+        <div className="grid grid-cols-6">
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 1
+          </div>
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 2
+          </div>
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 3
+          </div>
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 4
+          </div>
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 5
+          </div>
+          <div className="bg-pink-400 flex items-center justify-center h-[250px]">
+            Item 6
+          </div>
+        </div>
+      </div>
+      
+    </>
+  );
+}
+
+const Section5: React.FC = () => {
+  return (
+    <div className="custom-container mt-[20px]">
+      <div className="grid grid-cols-3 gap-3">
+        <div className="bg-blue-400 h-20"></div>
+        <div className="bg-blue-400 h-20"></div>
+        <div className="bg-blue-400 h-20"></div>
+      </div>
+    </div>
+  );
+}
+
+const Section6: React.FC = () => {
+  return (
+    <div className="custom-container mt-[20px]">
+      <div className="flex gap-2">
+        <div className="w-[35%] col-span-3">
+          <div className="h-[400px] w-full bg-gray-400">
+            <Carousel autoplay>
+              <div className="h-[200px] w-full bg-gray-400">
+                <h3>1</h3>
+              </div>
+              <div className="h-[200px] w-full bg-gray-400">
+                <h3>2</h3>
+              </div>
+              <div className="h-[200px] w-full bg-gray-400">
+                <h3>3</h3>
+              </div>
+              <div className="h-[200px] w-full bg-gray-400">
+                <h3>4</h3>
+              </div>
+            </Carousel>
+          </div>
+        </div>
+        <div className="grid grid-cols-4 gap-2 w-full">
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+          <div className="bg-green-400 w-full h-full"></div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const Section7: React.FC = () => {
+
+  const arr = new Array(48).fill(0);
+
+  return (
+    <div className="custom-container mt-[20px]">
+
+      <div className="text-center bg-white py-3">
+        DAILY DISCOVER
+      </div>
+      <div className="grid grid-cols-6 gap-3">
+        {
+          arr.map((item, index) => (
+            <div className="bg-red-400 h-[300px]"></div>
           ))
         }
       </div>
